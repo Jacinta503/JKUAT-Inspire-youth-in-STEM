@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile Card UI</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+        
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="profile-image"></div>
+
+            <div class="text-data">
+                <span class="name">Jacinta Francisca</span>
+                <span class="job">Software Engineering</span>
+                <p class="description">Aimed at designing, developing, testing and maintaining software using structured and systematic methods to ensure reliability and quality.</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#" class="icon" style="background: #df1591;"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="icon" style="background: #1507cf;"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="icon" style="background: #1ce70a;"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#" class="icon" style="background: #f3ef0b;"><i class='bx bxl-snapchat'></i></a>
+            </div>
+
+            <div class="buttons">
+                <button class="button">Follow</button>
+                <button class="button">Inbox</button>
+            </div>
+
+            <div class="analytics">
+                <div class="data"><i class='bx bx-add-to-queue'></i><span class="number">40k</span></div>
+                <div class="data"><i class='bx bx-download'></i><span class="number">65k</span></div>
+                <div class="data"><i class='bx bx-like'></i><span class="number">80k</span></div>
+            </div>
+        </div>
+    </body>
+
+    <style>
+        @import url('https://fonts.google.com/specimen/Kanit');
+
+        body {
+            background: linear-gradient(135deg, #18191a, #2848fd, #57f4fa, #7604f8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .profile-card {
+            background: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+            border: 3px solid rgb(184, 22, 199);
+            border-radius: 25px;
+            box-shadow: 0 0 25px rgba(252, 252, 252, 0.8);
+            padding: 20px;
+            text-align: center;
+            width: 320px;
+            color: rgb(3, 237, 253);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-image {
+            width: 110px;
+            height: 110px;
+            border-radius: 15%;
+            border: 4px solid rgb(32, 10, 231);
+            box-shadow: 0 0 15px rgb(255, 0, 234);
+            background: url('Franches.png.jpg') no-repeat center/cover;
+            margin: 0 auto;
+        }
+
+        .name {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 10px 0 5px;
+            text-transform: uppercase;
+        }
+
+        .job {
+            font-size: 24px;
+            font-weight: 500;
+            color: rgb(250, 23, 23);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .description {
+            font-size: 18px;
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 15px;
+            font-family: 'URW Chancery L', cursive ;
+            color: #090e4e;
+            text-shadow: 0 0 10px #e2d2f8, 0 0 20px #b065ff, 0 0 30px #8a2be2;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .icon {
+            display: inline-block;
+            font-size: 24px;
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 90%;
+            color: rgb(14, 13, 13);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+            background: white;
+            color: rgb(252, 248, 248);
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .button {
+            background: rgb(105, 2, 109);
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.164);
+            color: black;
+        }
+
+        .analytics {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .number {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</html>
